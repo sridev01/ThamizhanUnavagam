@@ -1,0 +1,630 @@
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.hero-left-wrapper {
+  max-width: 360px;
+}
+
+.hero-imgWrapper {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-heading {
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 1.4rem;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-1);
+}
+
+.hero-info {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-2);
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .hero-left {
+    flex: 3;
+  }
+
+  .hero-right {
+    flex: 4;
+  }
+
+  .hero-heading {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    line-height: 6rem;
+  }
+
+  .hero-info {
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .button-wrapper {
+    text-align: left;
+  }
+
+  .hero-imgWrapper {
+    max-width: none;
+    width: 90%;
+  }
+
+  .cooking-img {
+    position: relative;
+    bottom: 80px;
+  }
+}
+
+
+/* ----------------------------Our specials Styles--------------------------------------*/
+
+#ourspecials{
+    padding: 1rem;
+
+}
+
+.ourspecials-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.ourspecials-left{
+    display: flex;
+    gap: 1rem;   
+}
+
+.ourspecials-item{
+    background-color: var(--Lightgreen-1);
+    padding: 1.2rem;
+    padding-top: 5rem;
+    border-radius: 12px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ourspecials-item-img{
+    margin-top: calc(-50% - 1rem);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    height: 190px;
+    overflow: hidden;
+}
+
+.ourspecials-item-img img{
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.ourspecials-item-title{
+    font-size: 1.4rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.ourspecials-item-price{
+    color: var(--green-1);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.ourspecials-item-stars{
+    height: 1.5rem;
+    width: max-content;
+    margin-bottom: 1rem;
+}
+
+.ourspecials-item-text{
+    font-size: 1.4rem;
+    color: var(--black-2);
+    font-weight: 500;
+}
+
+.ourspecials-title{
+    font-size: 1.8rem;
+    color: var(--black-1);
+    margin-bottom: 1.5rem;
+
+}
+
+.ourspecials-text{
+    font-size: 1.4rem;
+    color: var(--black-2);
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #ourspecials{
+        padding-top: 15rem;
+    }
+
+    #ourspecials .conainer{
+        max-width: 900px;
+    }
+
+    .ourspecials-wrapper{
+        flex-direction: row;
+    }
+
+    .ourspecials-right{
+        flex: 2;
+    }
+
+    .ourspecials-left{
+        flex: 4;
+        gap: 2rem;
+    }
+
+    .ourspecials-item{
+        padding: 2rem;
+        width: 45%;
+    }
+
+    .ourspecials-item-title{
+        font-size: 2.4rem;
+        line-height: 1.4em;
+        margin-bottom: 1.5rem;
+    }
+
+    .ourspecials-item-price{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .ourspecials-item-stars{
+        width: 60px;
+        margin-bottom: 2rem;
+    }
+
+    .ourspecials-item-text{
+        font-size: 1.8rem;
+    }
+
+    .ourspecials-title{
+        font-size: 3.6rem;
+        margin-bottom: 1.5rem;
+
+    }
+
+    .ourspecials-text{
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .ourspecials-left{
+        flex-wrap: wrap;
+        gap: 10rem;
+    }
+
+    .ourspecials-item{
+        width: 100%;
+    }
+
+   
+}
+
+/*----------------------------------------- Discount Styles--------------------------------------------*/
+
+.discount-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--Lightgreen-1) url(./40-percent-discount-tag.png) no-repeat bottom right /0px;     
+    
+}
+
+.discount-images{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.discount-img1{
+    flex: 2;
+    transition: .1s;
+    cursor: pointer;
+
+}
+
+.discount-img1:hover{
+    transform: scale(1.5);
+    box-shadow: 5px 10px 18px black;
+    transition: .4s;
+}
+
+.discount-img2{
+    flex: 3;
+    transition: .1s;
+    cursor: pointer;
+
+
+}
+
+.discount-img2:hover{
+    transform: scale(1.5);
+    box-shadow: 5px 10px 18px black;
+    transition: .4s;
+}
+
+.discount-img3{
+    transition: .1s;
+    cursor: pointer;
+
+}
+
+.discount-img3:hover{
+    transform: scale(1.5);
+    box-shadow: 5px 10px 18px black;
+    transition: .4s;
+}
+
+.discount-images img{
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.discount-text{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--green-1);
+    margin-bottom: .5rem;
+
+}
+
+.discount-title{
+    font-size: 1.8rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.discount-price{
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.discount-oldprice{
+    color: var(--black-2);
+    text-decoration: line-through;
+}
+
+.discount-newprice{
+    color: var(--green-1);
+}
+
+.discount-stars{
+    width: 60px;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .discount-wrapper{
+        flex-direction: row;
+        gap: 4rem;
+        padding: 2rem;
+        align-items: center;
+        background-size: 150px;
+        margin: 0 auto;
+
+    }
+
+    .discount-images{
+        flex: 5;
+        margin-bottom: 0;
+        gap: 2rem;
+    }
+
+    .discount-img1, 
+    .discount-img2,
+    .discount-img3{
+        flex: 1;
+        height: 350px;
+    }
+
+    .discount-info{
+        flex: 3;
+    }
+
+    .discount-text{
+        font-size: 2.4rem;
+    }
+
+    .discount-title{
+        font-size: 3.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .discount-price{
+        font-size: 2.6rem; 
+  
+    }
+
+    .discount-stars{
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .discount-wrapper{
+        gap: 2rem;
+    }
+    
+    .discount-img3{
+        display: none;
+    }
+    
+}
+
+
+/* ---------------------------------Why US Styles---------------------------------------*/
+
+.whyus-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.whyus-left{
+    text-align: center;
+}
+
+.whyus-title{
+    font-family: Poppins;
+    font-size: 1.8rem;
+    color: var(--black-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+}
+
+.whyus-text{
+    font-size: 1.4rem;
+}
+
+.whyus-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.whyus-item{
+    background: var(--Lightgreen-1);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.why-item-icon{
+    max-width: 56px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-item-icon img{
+    align-self: center;
+    justify-content: center;
+
+}
+
+.whyus-item-text{
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-1);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .whyus-wrapper{
+        flex-direction: row;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .whyus-left{
+        flex: 4;
+        text-align: left;
+    }
+
+    .whyus-right{
+        flex: 3;
+    }
+
+    .whyus-title{
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .whyus-text{
+        font-size: 1.8rem;
+        line-height: 1.4em;
+    }
+
+    .whyus-items-wrapper{
+        gap: 1.5rem;
+    }
+    
+    .whyus-item{
+        padding: 2rem;
+    }
+
+    .whyus-item-icon{
+        max-width: 65px;
+        margin-left: 35px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .whyus-item-text{
+        font-size: 1.8rem;
+
+    }
+}
+
+/* Reviews Styles*/
+
+.testimonial-wrapper{
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+.testimonial-title{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--black-1);
+}
+
+.testimonial-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; 
+}
+
+.testimonial-item{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--Lightgreen-1);
+    border-radius: 12px;
+    margin-bottom: 2rem; 
+
+}
+
+.testimonial-item-info{
+    flex: 4;
+    align-items: flex-start;
+    justify-content: left;
+    position: relative;
+    right: 50px;
+}
+
+.testimonial-item-img{
+    flex: 2;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 10%;
+    width: 10%;
+}
+
+.reviwer-img{
+    width: 50px;
+}
+
+.testimonial-item-img img{
+    object-fit: cover;
+}
+
+.testimonial-item-name{
+    font-size: 1.4rem;
+    font-family: Poppins;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+}
+
+.testimonial-item-stars{
+    max-height: 15px;
+    width: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-item-text{
+    font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonial-wrapper{
+        max-width: 900px;
+    }
+
+    .testimonial-title{
+        font-size: 3.6rem;
+        margin-bottom: 5rem;
+    }
+
+    .testimonial-items-wrapper{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .testimonial-item{
+        padding: 2rem;
+    }
+
+    .testimonial-item-name{
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .testimonial-item-stars{
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-item-text{
+        font-size: 1.6rem;
+        line-height: 1.4em;
+    }
+
+    @media only screen and (max-width: 350px) {
+        .testimonial-item{
+            flex-direction: column;
+        }
+    }
+
+   .testimonial-item-info{
+    position: relative;
+    right: 220px;
+   }
+}
+
+
+
+
+
+
+
